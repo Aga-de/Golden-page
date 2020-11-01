@@ -213,5 +213,32 @@ ul {
     }
 }
 
+/*Footer*/
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    a {
+        text-decoration: none;
+        i::before {
+            display: flex;
+            justify-content: center;
+            color: $color-one;
+            background-color: $color-two;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            font-size: 15px;   
+        }
+    }
+}
+
+footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 
