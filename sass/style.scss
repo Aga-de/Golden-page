@@ -6,6 +6,7 @@ $color-one: #ffffff;
 $color-two:  #1e272e;
 $color-three: #ffd32a;
 $color-four: #747d8c;
+$color-five: #f1f2f6;
 
 body {
     font-size: 16px;
@@ -102,8 +103,9 @@ ul {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 96px;
+    margin-bottom: 96px;
     h2 {
-        margin-top: 98px;
         margin-bottom: 0;
         font-weight: bold;
         color: $color-two;
@@ -150,3 +152,66 @@ ul {
         font-family: $font-two;
     }
 }
+
+/*Portfolio*/
+
+.portfolio {
+    background-color: $color-five;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+.portfolio {
+    h2 {
+        margin-bottom: 0;
+        font-weight: bold;
+        color: $color-two;
+    }
+    h4 {
+        font-size: 16px;
+        font-family: $font-two;
+        margin-top: 0;
+        margin-bottom: 96px;        
+    }
+}
+
+.card {
+    background-color: $color-one;
+    padding: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    h4 {
+        padding-top: 30px;
+        padding-bottom: 0;
+        font-family: $font-one;
+        margin-bottom: 0;
+        color: $color-two;
+    }
+    p {
+        font-family: $font-two;
+        margin: 0;
+    }
+}
+
+.card-photo {
+    width: 280px;
+    height: 280px;
+    margin: 0 0 20px 0;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
