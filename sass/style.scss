@@ -13,4 +13,45 @@ body {
     font-family: $font-one;
 }
 
+header img {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
 
+.layer {
+    position: absolute;
+    background: rgba(76, 175, 80, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 50%;
+    z-index: 1;
+    .row {
+        display: flex;
+        justify-content: space-between;
+     }
+}
+
+h3 {
+    color: $color-three;
+    font-family: $font-two;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+    margin-right: 20px;
+    color: $color-one;
+    font-weight: bold;  
+    }
+}

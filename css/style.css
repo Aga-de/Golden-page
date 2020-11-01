@@ -4,4 +4,50 @@ body {
   color: #1e272e;
   font-family: "Rubik", sans-serif;
 }
+
+header img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.layer {
+  position: absolute;
+  background: rgba(76, 175, 80, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+  z-index: 1;
+}
+
+.navigation .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+h3 {
+  color: #ffd32a;
+  font-family: "Parisienne", cursive;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-right: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
