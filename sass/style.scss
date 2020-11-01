@@ -13,18 +13,13 @@ body {
     font-family: $font-one;
 }
 
+/*Header*/
+
 header img {
     height: 60vh;
     width: 100%;
     object-fit: cover;
     position: relative;
-}
-
-.layer {
-    position: absolute;
-    background: rgba(76, 175, 80, 0.3);
-    width: 100%;
-    height: 100%;
 }
 
 .navigation {
@@ -51,7 +46,53 @@ ul {
 
     li {
     margin-right: 20px;
-    color: $color-one;
-    font-weight: bold;  
+    font-weight: bold; 
+        a {
+            text-decoration: none;
+            color: $color-one;
+            &:hover {
+                color: $color-four;
+            }
+        }
     }
+}
+
+.welcome {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    h3 {
+        color: $color-one;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    h1 {
+        color: $color-one;
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+    }
+    .btn {
+        background-color: $color-three;
+        color: $color-one;
+        max-width: 160px;
+        margin: 24px auto 24px auto;
+        padding: 10px 20px;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover{
+            color: $color-four;
+        }
+    }
+
+    
 }
