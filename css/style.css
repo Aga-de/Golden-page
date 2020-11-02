@@ -6,6 +6,10 @@ body {
 }
 
 /*Header*/
+.container-fluid {
+  padding: 0;
+}
+
 header img {
   height: 70vh;
   width: 100%;
@@ -289,20 +293,33 @@ footer .row {
   .nav {
     display: -ms-flexbox;
     display: flex;
-    position: relative;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .nav h3 {
-    position: absolute;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: start;
         justify-content: flex-start;
-    margin: 20px;
-    padding: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
   }
-  .nav li {
+  .nav ul {
+    position: relative;
+    top: -30px;
+    margin: 0;
+    padding: auto;
+  }
+  .nav ul li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .nav ul li a {
     font-size: 10px;
-    margin: 5px;
   }
   .welcome {
     top: 50%;
